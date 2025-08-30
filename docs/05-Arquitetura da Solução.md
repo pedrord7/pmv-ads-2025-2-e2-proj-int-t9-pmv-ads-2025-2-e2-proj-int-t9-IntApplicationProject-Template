@@ -1,51 +1,32 @@
-# Arquitetura da Solução
+Visão Geral
+Missão
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+A Healthy Habits Platform tem como missão ajudar as pessoas a construir e manter hábitos saudáveis de forma simples, empática e sustentável. Nosso objetivo é transformar ações diárias em comportamentos automáticos que melhorem a saúde física e mental ao longo do tempo, permitindo que os usuários alcancem uma vida mais equilibrada e saudável.
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Visão de Longo Prazo
 
-## Diagrama de Classes
+Nossa visão de longo prazo é tornar-se a plataforma de referência em países de língua portuguesa para microintervenções de saúde. Queremos ser o espaço onde os usuários encontram suporte prático, baseado em evidências científicas, para melhorar sua saúde. O foco está em:
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+Reduzir o sedentarismo
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
+Melhorar a qualidade do sono
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+Aumentar a hidratação
 
-## Modelo ER (Projeto Conceitual)
+Fazer escolhas alimentares mais saudáveis
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
+Cultivar práticas de atenção plena e bem-estar
 
-Sugestão de ferramentas para geração deste artefato: LucidChart e Draw.io.
+Público-Alvo
 
-A referência abaixo irá auxiliá-lo na geração do artefato “Modelo ER”.
+Nosso público-alvo ampliado vai além das personas iniciais (estudantes, profissionais e pais). A plataforma é projetada para atender a:
 
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+Adultos em busca de prevenção de doenças crônicas: Pessoas que desejam melhorar sua saúde antes do surgimento de doenças.
 
-## Projeto da Base de Dados
+Profissionais de saúde: Médicos, nutricionistas, fisioterapeutas e outros profissionais que podem recomendar a plataforma aos seus pacientes como uma ferramenta complementar no processo de adesão a hábitos saudáveis.
 
-O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
- 
-Para mais informações, consulte o microfundamento "Modelagem de Dados".
+Empresas: Organizações interessadas em promover o bem-estar corporativo e implementar programas de qualidade de vida para seus colaboradores.
 
-## ATENÇÃO!!!
+O Que Esperar
 
-Os três artefatos — **Diagrama de Classes, Modelo ER e Projeto da Base de Dados** — devem ser desenvolvidos de forma sequencial e integrada, garantindo total coerência e compatibilidade entre eles. O diagrama de classes orienta a estrutura e o comportamento do software; o modelo ER traduz essa estrutura para o nível conceitual dos dados; e o projeto da base de dados materializa essas definições no formato físico (tabelas, colunas, chaves e restrições). A construção isolada ou desconexa desses elementos pode gerar inconsistências, dificultar a implementação e comprometer a qualidade do sistema.
-
-## Tecnologias Utilizadas
-
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
-
-## Hospedagem
-
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+A plataforma é uma solução digital que oferece microintervenções diárias, como lembretes personalizados e sugestões práticas para melhorar hábitos de saúde. Com base em dados do usuário e evidências científicas, a plataforma é projetada para ser simples, prática e eficaz.
