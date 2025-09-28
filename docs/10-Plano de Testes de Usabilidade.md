@@ -1,71 +1,130 @@
-# Plano de Testes de Usabilidade
+# 📋 Plano de Testes de Software e Usabilidade  
+**Sistema de Gerenciamento de Hábitos**
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+---
 
-Um plano de teste de usabilidade deverá conter: 
+## 1. Objetivo  
+Garantir que o sistema seja **intuitivo, funcional** e atenda às necessidades do usuário final, validando aspectos técnicos (funcionalidades) e de experiência (usabilidade).  
 
-## Definição do(s) objetivo(s)
+---
 
-Antes de iniciar os testes, é essencial definir o que se deseja avaliar na usabilidade do sistema. 
-Alguns exemplos de objetivos são:
-- Verificar se os usuários conseguem concluir tarefas essenciais sem dificuldades.
-- Identificar barreiras na navegação e interação com o sistema.
-- Avaliar a eficiência e a satisfação do usuário ao utilizar a interface.
-- Testar a acessibilidade para diferentes perfis de usuários.
+## 2. Escopo  
+O plano abrange:  
+- **Testes funcionais** → Verificar se as funcionalidades implementadas funcionam conforme os requisitos.  
+- **Testes de usabilidade** → Avaliar a facilidade de uso, clareza das interfaces e eficiência na execução das tarefas.  
 
-## Seleção dos participantes
+---
 
-Para garantir que o teste reflita o uso real do sistema, escolha participantes representativos do público-alvo.
+## 3. Funcionalidades a Testar  
+- Cadastro e login de usuários.  
+- Criação, edição e exclusão de hábitos.  
+- Definição de periodicidade e metas personalizadas.  
+- Registro de check-ins diários.  
+- Sistema de recompensas e streaks.  
+- Lembretes e notificações.  
+- Compartilhamento de conquistas em redes sociais.  
+- Visualização de métricas e relatórios de progresso.  
 
-**Critérios para selecionar participantes:**
-- Perfis variados (experientes e iniciantes no sistema).
-- Diferentes níveis de familiaridade com tecnologia.
-- Pessoas com necessidades especiais (se aplicável).
+---
 
-**Quantidade recomendada:**
-Mínimo: 5 participantes.
-Ideal: Entre 8 e 12 para maior diversidade.
+## 4. Estratégia de Testes  
 
-## Definição de cenários de teste
+### 4.1 Testes Funcionais  
+- **Método**: Testes manuais e automatizados.  
+- **Abordagem**: Caixa-preta (validação de entradas e saídas).  
 
-Os cenários representam tarefas reais que os usuários executam no sistema. Neste projeto, cada grupo deverá definir, no mínimo, **CINCO cenários para a aplicação** e cada cenário deve incluir:
+**Exemplo de Caso de Teste:**  
+- **ID**: CT-01  
+- **Funcionalidade**: Cadastro de usuário  
+- **Ação**: Preencher formulário com dados válidos  
+- **Resultado esperado**: Conta criada e usuário redirecionado para tela inicial.  
 
-- Objetivo: O que será avaliado.
-- Contexto: A situação que leva o usuário a interagir com o sistema.
-- Tarefa: A ação que o usuário deve realizar.
-- Critério de sucesso: Como determinar se a tarefa foi concluída corretamente.
+### 4.2 Testes de Usabilidade  
+- **Método**: Testes de campo com usuários reais (5 a 10 por perfil).  
+- **Perfis testados**: Estudantes, profissionais e adultos buscando saúde.  
+- **Critérios observados**:  
+  - **Eficiência** – Tempo para realizar tarefas.  
+  - **Eficácia** – Percentual de tarefas concluídas.  
+  - **Satisfação** – Nível de satisfação do usuário (questionário SUS).  
+  - **Aprendizado** – Facilidade de compreender funcionalidades sem tutoriais extensos.  
 
-**Exemplo: Cenário 1**
+---
 
-**Objetivo:** Avaliar a facilidade e eficiência do usuário em pesquisar, adicionar um produto ao carrinho e finalizar a compra sem dificuldades.
+## 5. Métricas de Usabilidade  
+- Tempo médio de execução de tarefas.  
+- Taxa de erro (ações incorretas ou abandonadas).  
+- Taxa de sucesso em tarefas.  
+- **SUS Score** (0–100).  
+- Feedback qualitativo.  
 
-**Contexto:** O usuário deseja comprar um notebook para uso pessoal. Para isso, ele deverá entrar no site www.compras.com.br para buscar opções disponíveis, comparar preços, adicionar o produto ao carrinho e finalizar a compra com pagamento via cartão de crédito.
+---
 
-**Tarefa(s):** 
-- Acessar o site e localizar a barra de pesquisa.
-- Pesquisar por "notebook" e utilizar os filtros para refinar a busca (exemplo: marca, preço, processador).
-- Escolher um dos notebooks listados e acessar a página do produto.
-- Adicionar o produto ao carrinho.
-- Finalizar a compra, preenchendo os dados de pagamento e endereço de entrega.
-- Confirmar a transação e verificar a tela de pedido concluído.
+## 6. Ferramentas de Apoio  
+- **Funcionais**: Postman (API), Selenium/Appium (automatização), JUnit/PyTest.  
+- **Usabilidade**: Gravação de tela, questionários SUS, protótipos interativos (Figma, MarvelApp).  
 
-**Critério(s) de Sucesso(s):**
-- O usuário consegue encontrar e filtrar os produtos sem dificuldades.
-- O produto é adicionado ao carrinho corretamente.
-- O usuário consegue preencher as informações de pagamento e entrega sem erros.
-- A compra é finalizada com sucesso, e o usuário visualiza a confirmação do pedido.
-- Todo o processo ocorre em menos de 5 minutos, sem necessidade de assistência.
+---
 
-## Métodos de coleta de dados
+## 7. Cronograma (Exemplo)  
 
-Os dados coletados devem ajudar a entender a experiência dos usuários e os dados podem ser coletados por observação direta incluindo métricas quantitativas (quantidade de cliques, número de erros, tempo gasto para cada tarefa etc.), métricas qualitativas (dificuldades, comentários etc.) e questionários pós-teste (A interface foi fácil de entender? Você encontrou dificuldades em alguma etapa? O que poderia ser melhorado?)
+| Etapa                     | Duração    | Responsável   |  
+|----------------------------|------------|---------------|  
+| Planejamento dos testes    | 1 semana   | Equipe QA     |  
+| Testes funcionais iniciais | 2 semanas  | Dev + QA      |  
+| Testes de usabilidade      | 2 semanas  | UX Researcher |  
+| Análise de resultados      | 1 semana   | Equipe UX     |  
+| Ajustes finais             | 2 semanas  | Dev Team      |  
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+---
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+## 8. Critérios de Aceitação  
+- Funcionalidades críticas (cadastro, login, criação de hábito, check-ins) devem ter **100% de sucesso**.  
+- **SUS ≥ 80** (considerado “excelente”).  
+- Taxa de sucesso em tarefas ≥ **90%**.  
+- Tempo médio para criar um hábito ≤ **1 minuto**.  
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+---
+
+## 9. Casos de Teste Funcionais  
+
+| ID   | Funcionalidade       | Pré-condição             | Ação                                  | Resultado Esperado                                       |  
+|------|----------------------|--------------------------|---------------------------------------|---------------------------------------------------------|  
+| CT-01 | Cadastro de usuário  | Nenhuma                  | Preencher formulário com dados válidos | Conta criada e redirecionamento para tela inicial        |  
+| CT-02 | Cadastro de usuário  | Nenhuma                  | Preencher formulário com e-mail inválido | Mensagem de erro exibida, sem criar conta              |  
+| CT-03 | Login                | Usuário já cadastrado    | Inserir credenciais válidas            | Usuário acessa a tela principal                         |  
+| CT-04 | Login                | Usuário já cadastrado    | Inserir senha incorreta                | Exibir mensagem de erro                                 |  
+| CT-05 | Criação de hábito    | Usuário logado           | Inserir nome e meta                    | Hábito aparece na lista do usuário                      |  
+| CT-06 | Check-in diário      | Hábito criado            | Marcar como concluído                  | Hábito exibido como concluído, streak atualizado        |  
+| CT-07 | Sistema de recompensas | Usuário com streak ≥ 7  | Atingir meta mínima                    | Recompensa visual/medalha liberada                      |  
+| CT-08 | Notificações         | Usuário com hábito ativo | Configurar lembrete                    | Sistema envia notificação no horário programado         |  
+| CT-09 | Relatórios           | Hábitos registrados      | Acessar painel de métricas             | Exibir relatórios gráficos de progresso                 |  
+| CT-10 | Compartilhamento     | Usuário com conquista    | Clicar em “compartilhar”               | Postagem gerada em rede social integrada                |  
+
+---
+
+## 10. Questionário de Usabilidade  
+
+### Parte A – SUS (System Usability Scale)  
+1. Eu usaria este sistema com frequência.  
+2. Achei o sistema desnecessariamente complexo. *(inverso)*  
+3. Achei o sistema fácil de usar.  
+4. Acho que precisaria de ajuda técnica para usar o sistema. *(inverso)*  
+5. As funcionalidades estão bem integradas.  
+6. Achei o sistema inconsistente em alguns momentos. *(inverso)*  
+7. A maioria das pessoas aprenderia a usar este sistema rapidamente.  
+8. Achei o sistema complicado de aprender. *(inverso)*  
+9. Eu me senti confiante usando o sistema.  
+10. Precisei aprender muitas coisas antes de conseguir usar. *(inverso)*  
+
+> **Resultado**: respostas convertidas em **SUS Score (0–100)**.  
+
+---
+
+### Parte B – Perguntas Qualitativas  
+- Qual foi a sua primeira impressão ao usar o sistema?  
+- O que você achou mais fácil de fazer?  
+- O que você achou mais difícil/confuso de entender?  
+- Você se sentiu motivado a registrar seus hábitos diariamente?  
+- Que melhorias você sugeriria para deixar o sistema mais útil ou agradável?  
+- Você recomendaria este sistema para amigos/colegas? Por quê?  
+
