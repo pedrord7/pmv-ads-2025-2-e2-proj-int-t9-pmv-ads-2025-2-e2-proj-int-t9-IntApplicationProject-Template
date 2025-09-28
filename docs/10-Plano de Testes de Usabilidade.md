@@ -1,71 +1,111 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
-
-Um plano de teste de usabilidade deverá conter: 
 
 ## Definição do(s) objetivo(s)
 
-Antes de iniciar os testes, é essencial definir o que se deseja avaliar na usabilidade do sistema. 
-Alguns exemplos de objetivos são:
-- Verificar se os usuários conseguem concluir tarefas essenciais sem dificuldades.
-- Identificar barreiras na navegação e interação com o sistema.
-- Avaliar a eficiência e a satisfação do usuário ao utilizar a interface.
-- Testar a acessibilidade para diferentes perfis de usuários.
+Garantir que o sistema seja intuitivo, funcional e atenda às necessidades do usuário final, validando aspectos técnicos (funcionalidades) e de experiência (usabilidade).
 
-## Seleção dos participantes
 
-Para garantir que o teste reflita o uso real do sistema, escolha participantes representativos do público-alvo.
+ #Escopo
+O plano abrange:
+Testes funcionais → Verificar se as funcionalidades implementadas funcionam conforme os requisitos.
+Testes de usabilidade → Avaliar a facilidade de uso, clareza das interfaces e eficiência na execução das tarefas.
+Ex: "Este plano não abrange testes de desempenho, testes de segurança ou compatibilidade em navegadores desatualizados."
+📋 3. Funcionalidades a Testar
 
-**Critérios para selecionar participantes:**
-- Perfis variados (experientes e iniciantes no sistema).
-- Diferentes níveis de familiaridade com tecnologia.
-- Pessoas com necessidades especiais (se aplicável).
+Considere agrupar as funcionalidades por categorias para facilitar leitura:
 
-**Quantidade recomendada:**
-Mínimo: 5 participantes.
-Ideal: Entre 8 e 12 para maior diversidade.
+Autenticação: Cadastro e login de usuários.
 
-## Definição de cenários de teste
+Gerenciamento de Hábitos: Criação, edição, exclusão, definição de metas.
 
-Os cenários representam tarefas reais que os usuários executam no sistema. Neste projeto, cada grupo deverá definir, no mínimo, **CINCO cenários para a aplicação** e cada cenário deve incluir:
+Engajamento: Recompensas, streaks, notificações.
 
-- Objetivo: O que será avaliado.
-- Contexto: A situação que leva o usuário a interagir com o sistema.
-- Tarefa: A ação que o usuário deve realizar.
-- Critério de sucesso: Como determinar se a tarefa foi concluída corretamente.
+Social e Relatórios: Compartilhamento, métricas.
 
-**Exemplo: Cenário 1**
+🔍 4. Estratégia de Testes
+4.1 Testes Funcionais
 
-**Objetivo:** Avaliar a facilidade e eficiência do usuário em pesquisar, adicionar um produto ao carrinho e finalizar a compra sem dificuldades.
+Para casos mais complexos, adicione testes negativos e alternativos (ex: conexão instável, repetição de hábito, etc).
 
-**Contexto:** O usuário deseja comprar um notebook para uso pessoal. Para isso, ele deverá entrar no site www.compras.com.br para buscar opções disponíveis, comparar preços, adicionar o produto ao carrinho e finalizar a compra com pagamento via cartão de crédito.
+Reforce a necessidade de regressão para evitar quebra de funcionalidades anteriores.
 
-**Tarefa(s):** 
-- Acessar o site e localizar a barra de pesquisa.
-- Pesquisar por "notebook" e utilizar os filtros para refinar a busca (exemplo: marca, preço, processador).
-- Escolher um dos notebooks listados e acessar a página do produto.
-- Adicionar o produto ao carrinho.
-- Finalizar a compra, preenchendo os dados de pagamento e endereço de entrega.
-- Confirmar a transação e verificar a tela de pedido concluído.
+4.2 Testes de Usabilidade
 
-**Critério(s) de Sucesso(s):**
-- O usuário consegue encontrar e filtrar os produtos sem dificuldades.
-- O produto é adicionado ao carrinho corretamente.
-- O usuário consegue preencher as informações de pagamento e entrega sem erros.
-- A compra é finalizada com sucesso, e o usuário visualiza a confirmação do pedido.
-- Todo o processo ocorre em menos de 5 minutos, sem necessidade de assistência.
+Pode ser interessante definir tarefas específicas para os testes:
 
-## Métodos de coleta de dados
+Criar um hábito com meta semanal.
 
-Os dados coletados devem ajudar a entender a experiência dos usuários e os dados podem ser coletados por observação direta incluindo métricas quantitativas (quantidade de cliques, número de erros, tempo gasto para cada tarefa etc.), métricas qualitativas (dificuldades, comentários etc.) e questionários pós-teste (A interface foi fácil de entender? Você encontrou dificuldades em alguma etapa? O que poderia ser melhorado?)
+Configurar um lembrete.
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+Acompanhar o progresso de um hábito no painel de métricas.
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+📊 5. Métricas de Usabilidade
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+Além das que já listou, considere:
+
+Net Promoter Score (NPS): "Você recomendaria este app a um amigo?"
+
+Número de cliques por tarefa: útil para identificar caminhos longos.
+
+🛠️ 6. Ferramentas de Apoio
+
+Você pode adicionar ferramentas de:
+
+Gestão de testes: TestRail, Zephyr, Xray.
+
+Captura de feedback com protótipos: Maze, UsabilityHub.
+
+🗓️ 7. Cronograma
+
+Muito bom. Para clareza, considere formatar como tabela:
+| Etapa                   | Duração   | Responsável   |
+| ----------------------- | --------- | ------------- |
+| Planejamento dos testes | 1 semana  | Equipe QA     |
+| Testes funcionais       | 2 semanas | Dev + QA      |
+| Testes de usabilidade   | 2 semanas | UX Researcher |
+| Análise de resultados   | 1 semana  | Equipe UX     |
+| Ajustes finais          | 2 semanas | Dev Team      |
+
+✅ 8. Critérios de Aceitação
+
+Excelente, mas pode reforçar:
+
+Todos bugs críticos e altos devem ser corrigidos antes da entrega final.
+
+Nenhuma funcionalidade essencial deve apresentar falhas bloqueantes.
+
+📌 Casos de Teste Funcionais
+
+Perfeitos. Sugestão: adicionar colunas de Prioridade e Status para controle durante execução:
+
+| ID    | Funcionalidade      | Pré-condição | Ação                                   | Resultado Esperado                   | Prioridade | Status    |
+| ----- | ------------------- | ------------ | -------------------------------------- | ------------------------------------ | ---------- | --------- |
+| CT-01 | Cadastro de usuário | Nenhuma      | Preencher formulário com dados válidos | Conta criada e usuário redirecionado | Alta       | A definir |
+
+🧠 2. Questionário de Usabilidade
+Parte A – SUS
+
+Muito bem estruturado. Lembre-se de aplicar a pontuação reversa nos itens ímpares/pares para cálculo correto.
+
+Parte B – Qualitativas
+
+Perfeitas. Considere incluir:
+
+"Você encontrou algo que não funcionou como esperava?"
+
+"O que te motivaria a continuar usando este sistema diariamente?"
+
+🧩 Conclusão
+
+O documento já está muito completo e funcional. Com pequenos ajustes, pode se tornar um plano de referência para testes ágeis e centrados no usuário.
+
+Se quiser, posso gerar:
+
+✅ Um template editável (em Word, Google Docs ou PDF).
+
+✅ Uma planilha com os casos de teste organizados.
+
+✅ Um roteiro para aplicar o teste de usabilidade com participantes.
+
+
